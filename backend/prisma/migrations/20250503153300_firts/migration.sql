@@ -1,13 +1,11 @@
 -- CreateTable
 CREATE TABLE "usuarios" (
-    "id" TEXT NOT NULL,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "name" TEXT,
     "email" TEXT,
     "password" TEXT,
-    "createAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updateAt" TIMESTAMP(3) NOT NULL,
-
-    CONSTRAINT "usuarios_pkey" PRIMARY KEY ("id")
+    "createAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updateAt" DATETIME NOT NULL
 );
 
 -- CreateIndex
