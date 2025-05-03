@@ -1,0 +1,4 @@
+npm init -y
+npm i express
+-- Criar manualmente o arquivo main.js
+npm i prisma @prisma/client cors dotenv
